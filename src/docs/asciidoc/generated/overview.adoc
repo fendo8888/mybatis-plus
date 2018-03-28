@@ -1,0 +1,38 @@
+= API文档
+
+
+[[_overview]]
+== Overview
+mybatis-plus项目API文档
+
+
+=== Version information
+[%hardbreaks]
+__Version__ : 1.0.0
+
+
+=== Contact information
+[%hardbreaks]
+__Contact__ : fendo
+
+
+=== License information
+[%hardbreaks]
+__License__ : The Apache License, Version 2.0
+__License URL__ : http://www.apache.org/licenses/LICENSE-2.0.html
+__Terms of service__ : http://blog.csdn.net/u011781521?viewmode=contents
+
+
+=== URI scheme
+[%hardbreaks]
+__Host__ : localhost:8080
+__BasePath__ : /
+
+
+=== Tags
+
+* plus-controller : plus操作接口
+* user-controller : 用户操作接口
+
+
+

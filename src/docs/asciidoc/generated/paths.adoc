@@ -1,0 +1,598 @@
+
+[[_paths]]
+== Paths
+
+[[_adduserusingget]]
+=== addUser
+....
+GET /plus/add
+....
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* plus-controller
+
+
+[[_crudusingget]]
+=== crud
+....
+GET /plus/crud
+....
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_95cde29d19638e8b05882b3550fba87d,User对象>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* plus-controller
+
+
+[[_insertusingget]]
+=== insert
+....
+GET /plus/insert
+....
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_77062db6ac184566fa28b58501985298,Page«User对象»>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* plus-controller
+
+
+[[_testusingget]]
+=== 用户分页数据
+....
+GET /plus/page
+....
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_95cde29d19638e8b05882b3550fba87d,User对象>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* plus-controller
+
+
+[[_pagehelperusingget]]
+=== pagehelper
+....
+GET /plus/pagehelper
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^4"]
+|===
+|Type|Name|Schema
+|**Query**|**ascs** +
+__optional__|< string > array(multi)
+|**Query**|**condition** +
+__optional__|object
+|**Query**|**current** +
+__optional__|integer (int32)
+|**Query**|**descs** +
+__optional__|< string > array(multi)
+|**Query**|**limit** +
+__optional__|integer (int32)
+|**Query**|**offset** +
+__optional__|integer (int32)
+|**Query**|**openSort** +
+__optional__|boolean
+|**Query**|**optimizeCountSql** +
+__optional__|boolean
+|**Query**|**orderByField** +
+__optional__|string
+|**Query**|**pages** +
+__optional__|integer (int64)
+|**Query**|**records** +
+__optional__|< object > array(multi)
+|**Query**|**searchCount** +
+__optional__|boolean
+|**Query**|**size** +
+__optional__|integer (int32)
+|**Query**|**total** +
+__optional__|integer (int64)
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* plus-controller
+
+
+[[_pageusingget]]
+=== page
+....
+GET /plus/pages
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^4"]
+|===
+|Type|Name|Schema
+|**Query**|**ascs** +
+__optional__|< string > array(multi)
+|**Query**|**condition** +
+__optional__|object
+|**Query**|**current** +
+__optional__|integer (int32)
+|**Query**|**descs** +
+__optional__|< string > array(multi)
+|**Query**|**limit** +
+__optional__|integer (int32)
+|**Query**|**offset** +
+__optional__|integer (int32)
+|**Query**|**openSort** +
+__optional__|boolean
+|**Query**|**optimizeCountSql** +
+__optional__|boolean
+|**Query**|**orderByField** +
+__optional__|string
+|**Query**|**pages** +
+__optional__|integer (int64)
+|**Query**|**records** +
+__optional__|< object > array(multi)
+|**Query**|**searchCount** +
+__optional__|boolean
+|**Query**|**size** +
+__optional__|integer (int32)
+|**Query**|**total** +
+__optional__|integer (int64)
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* plus-controller
+
+
+[[_saveusingget]]
+=== Find purchase order by ID
+....
+GET /plus/save
+....
+
+
+==== Description
+For valid response try integer IDs with value &lt;= 5 or &gt; 10. Other values will generated exceptions
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_95cde29d19638e8b05882b3550fba87d,User对象>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* Pet Store
+
+
+[[_getuserbysqlusingget]]
+=== getUserBySql
+....
+GET /plus/selectsql
+....
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* plus-controller
+
+
+[[_testtransactionalusingget]]
+=== testTransactional
+....
+GET /plus/test_transactional
+....
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* plus-controller
+
+
+[[_deleteusingget]]
+=== 删除用户
+....
+GET /user/delete
+....
+
+
+==== Description
+通过用户id删除用户
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**id** +
+__required__|用户ID)|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|操作成功|<<_7c5094ed86b957d704274ee0e5ba28ae,ResultData«string»>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|**405**|权限不足|No Content
+|**500**|服务器内部异常|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* user-controller
+
+
+[[_getusingget]]
+=== 获取用户信息
+....
+GET /user/get
+....
+
+
+==== Description
+更新ID获取用户信息
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**id** +
+__required__|用户ID)|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_9632c5eb030c703a144b70493c7733f8,ResultData«User对象»>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* user-controller
+
+
+[[_lisusingget]]
+=== 自带分页
+....
+GET /user/list
+....
+
+
+==== Description
+分页获取数据
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**ascs** +
+__optional__||< string > array(multi)
+|**Query**|**condition** +
+__optional__||object
+|**Query**|**current** +
+__optional__|当前页码|string
+|**Query**|**descs** +
+__optional__||< string > array(multi)
+|**Query**|**limit** +
+__optional__||integer (int32)
+|**Query**|**offset** +
+__optional__||integer (int32)
+|**Query**|**openSort** +
+__optional__||boolean
+|**Query**|**optimizeCountSql** +
+__optional__||boolean
+|**Query**|**orderByField** +
+__optional__||string
+|**Query**|**pages** +
+__optional__||integer (int64)
+|**Query**|**records** +
+__optional__||< object > array(multi)
+|**Query**|**searchCount** +
+__optional__||boolean
+|**Query**|**size** +
+__optional__|一页大小|string
+|**Query**|**total** +
+__optional__||integer (int64)
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_943dd4758a02bb71f01e07c8c7357cb2,ResultData«CustomPage«User对象»»>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* user-controller
+
+
+[[_pageusingpost]]
+=== 自定义分页
+....
+POST /user/page
+....
+
+
+==== Description
+分页获取数据
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**frontPage** +
+__optional__|分页参数|<<_377d49f7120dac31cb0e6d9ffa9fb066,FrontPage«User对象»>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_46d6fbd3ae44b08bb6e34ef9fd61ed6e,ResultData«CustomPage«Map«string,object»»»>>
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* user-controller
+
+
+[[_saveusingpost]]
+=== 更新用户信息
+....
+POST /user/save
+....
+
+
+==== Description
+更新或者保存用户信息
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**用户对象** +
+__required__|传入JSON格式|<<_95cde29d19638e8b05882b3550fba87d,User对象>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_943dd4758a02bb71f01e07c8c7357cb2,ResultData«CustomPage«User对象»»>>
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|**405**|invalid input|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* user-controller
+
+
+

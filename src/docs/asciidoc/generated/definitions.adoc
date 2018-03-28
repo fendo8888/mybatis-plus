@@ -1,0 +1,184 @@
+
+[[_definitions]]
+== Definitions
+
+[[_5091f1110eda77ed34f45e685412a63f]]
+=== CustomPage«Map«string,object»»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**asc** +
+__optional__||boolean
+|**orderByField** +
+__optional__|排序字段|string
+|**pageNo** +
+__optional__|当前页数|integer (int32)
+|**pageSize** +
+__optional__|每页显示数量|integer (int32)
+|**parameterType** +
+__optional__|数据列表|< <<_4998b3569615b7a93bfc703396747ee9,Map«string,object»>> > array
+|**totalPage** +
+__optional__|总页数|integer (int32)
+|**totalRecord** +
+__optional__|总条数|integer (int32)
+|===
+
+
+[[_e2dba3fba44976be361a1d2d1e5b0edd]]
+=== CustomPage«User对象»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**asc** +
+__optional__||boolean
+|**orderByField** +
+__optional__|排序字段|string
+|**pageNo** +
+__optional__|当前页数|integer (int32)
+|**pageSize** +
+__optional__|每页显示数量|integer (int32)
+|**parameterType** +
+__optional__|数据列表|< <<_95cde29d19638e8b05882b3550fba87d,User对象>> > array
+|**totalPage** +
+__optional__|总页数|integer (int32)
+|**totalRecord** +
+__optional__|总条数|integer (int32)
+|===
+
+
+[[_377d49f7120dac31cb0e6d9ffa9fb066]]
+=== FrontPage«User对象»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**pageNo** +
+__optional__|当前页数|integer (int32)
+|**pagePlus** +
+__optional__||<<_77062db6ac184566fa28b58501985298,Page«User对象»>>
+|**pageSize** +
+__optional__|每页显示条数|integer (int32)
+|**param** +
+__optional__|请求参数|<<_95cde29d19638e8b05882b3550fba87d,User对象>>
+|===
+
+
+[[_4998b3569615b7a93bfc703396747ee9]]
+=== Map«string,object»
+__Type__ : < string, object > map
+
+
+[[_77062db6ac184566fa28b58501985298]]
+=== Page«User对象»
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**current** +
+__optional__|integer (int32)
+|**pages** +
+__optional__|integer (int64)
+|**records** +
+__optional__|< <<_95cde29d19638e8b05882b3550fba87d,User对象>> > array
+|**size** +
+__optional__|integer (int32)
+|**total** +
+__optional__|integer (int64)
+|===
+
+
+[[_46d6fbd3ae44b08bb6e34ef9fd61ed6e]]
+=== ResultData«CustomPage«Map«string,object»»»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**code** +
+__optional__|错误码|string
+|**data** +
+__optional__|数据对象|<<_5091f1110eda77ed34f45e685412a63f,CustomPage«Map«string,object»»>>
+|**message** +
+__optional__|错误码描述|string
+|===
+
+
+[[_943dd4758a02bb71f01e07c8c7357cb2]]
+=== ResultData«CustomPage«User对象»»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**code** +
+__optional__|错误码|string
+|**data** +
+__optional__|数据对象|<<_e2dba3fba44976be361a1d2d1e5b0edd,CustomPage«User对象»>>
+|**message** +
+__optional__|错误码描述|string
+|===
+
+
+[[_9632c5eb030c703a144b70493c7733f8]]
+=== ResultData«User对象»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**code** +
+__optional__|错误码|string
+|**data** +
+__optional__|数据对象|<<_95cde29d19638e8b05882b3550fba87d,User对象>>
+|**message** +
+__optional__|错误码描述|string
+|===
+
+
+[[_7c5094ed86b957d704274ee0e5ba28ae]]
+=== ResultData«string»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**code** +
+__optional__|错误码|string
+|**data** +
+__optional__|数据对象|string
+|**message** +
+__optional__|错误码描述|string
+|===
+
+
+[[_95cde29d19638e8b05882b3550fba87d]]
+=== User对象
+用户信息
+
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**age** +
+__optional__|用户年龄 +
+**Example** : `"2"`|enum (一岁, 二岁)
+|**createBy** +
+__optional__|创建人|string
+|**createDate** +
+__optional__|创建时间|string (date-time)
+|**id** +
+__optional__|主键|string
+|**name** +
+__optional__|用户姓名 +
+**Example** : `"fendo"`|string
+|**remarks** +
+__optional__|备注信息|string
+|**sex** +
+__optional__|用户性别 +
+**Example** : `"1"`|enum (男, 女)
+|**updateBy** +
+__optional__|更新者|string
+|**updateDate** +
+__optional__|更新时间|string (date-time)
+|===
+
+
+
